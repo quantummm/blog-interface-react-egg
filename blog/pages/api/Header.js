@@ -14,15 +14,11 @@ const Header = () => (
       type="flex"
       justify="center"
     >
-      <Col span={12}>
-        <Col span={12} className="header-logo">
-          Aiden
-        </Col>
-        <Col span={12} className="header-txt">
-          My Personal Blog
-        </Col>
+      <Col xs={18} sm={18} md={10} lg={10} xl={10}>
+        <span className="header-logo">Aiden</span>
+        <span className="header-txt"> - Personal Blog</span>
       </Col>
-      <Col span={12}>
+      <Col xs={4} sm={4} md={14} lg={8} xl={6}>
         <Menu mode="horizontal">
           <Menu.Item key="home">
             <HomeOutlined />
