@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/components/header.css";
+import styles from "../../styles/components/header.module.css";
 import {
   HomeOutlined,
   SmileOutlined,
@@ -8,17 +8,17 @@ import {
 import { Row, Col, Menu } from "antd";
 
 const Header = () => (
-  <div className="header">
+  <div className={styles.header}>
     <Row
       gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
       type="flex"
       justify="center"
     >
-      <Col xs={18} sm={18} md={10} lg={10} xl={10}>
-        <span className="header-logo">Aiden</span>
-        <span className="header-txt"> - Personal Blog</span>
+      <Col xs={18} sm={18} md={16} lg={14} xl={12}>
+        <span className={styles.header_logo}>Aiden</span>
+        <span className={styles.header_txt}> - Personal Blog</span>
       </Col>
-      <Col xs={4} sm={4} md={14} lg={8} xl={6}>
+      <Col xs={4} sm={4} md={8} lg={8} xl={8}>
         <Menu mode="horizontal">
           <Menu.Item key="home">
             <HomeOutlined />

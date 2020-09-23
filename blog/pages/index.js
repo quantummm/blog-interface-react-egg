@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import { Button } from "antd";
 import Header from "./api/Header";
+import { Row, Col } from "antd";
+import styles from "../styles/components/list.module.css";
 
 const Home = () => {
   return (
@@ -9,9 +10,22 @@ const Home = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <div>
-        <Header />
-      </div>
+      <Header />
+      <Row className={styles.comm_main} type="flex" justify="center">
+        <Col
+          className={styles.comm_left}
+          xs={24}
+          sm={24}
+          md={16}
+          lg={16}
+          xl={14}
+        >
+          Left
+        </Col>
+        <Col className={styles.comm_right} xs={0} sm={0} md={6} lg={5} xl={4}>
+          Right
+        </Col>
+      </Row>
     </div>
   );
 };
