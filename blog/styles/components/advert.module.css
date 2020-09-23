@@ -1,0 +1,16 @@
+.ad_div {
+  margin-top: 0.5rem;
+}
+.ad_div div {
+  border-radius: 0.3rem;
+  margin-bottom: 0.2rem;
+  overflow: hidden;
+}
+
+.comm_box {
+  background-color: #fff;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  border: 1px solid #eee;
+}

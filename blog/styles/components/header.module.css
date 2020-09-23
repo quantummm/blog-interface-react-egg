@@ -1,9 +1,9 @@
 .header {
   background-color: #fff;
-  padding: 0.2rem;
+  padding: 0.4rem;
   overflow: hidden;
   height: 3.2rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 .header_logo {
   color: #1e90ff;
@@ -23,4 +23,7 @@
   font-size: 0.9rem !important;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+#ant_row {
+  background: #fff;
 }
